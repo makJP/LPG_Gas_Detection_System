@@ -5,6 +5,7 @@ This project is designed to detect LPG gas leakage using the MQ6 sensor. When th
 
 ## Circuit Diagram
 Circuit_Diagram.png
+![alt text](Circuit_Diagram-1.png)
 
 ## Key Components Used
 - **MQ6 Gas Sensor** - Detects LPG gas concentration in the air.
@@ -19,7 +20,16 @@ Circuit_Diagram.png
 - **Audible Alert via Buzzer**  
 - **Comparator-based Signal Processing**  
 - **Stable Power Supply using 7805 Regulator**  
-- **Safe Operation with Transformer-based Power Conversion**  
+- **Safe Operation with Transformer-based Power Conversion**
+
+## Working
+- AC 230V, 50Hz input is provided to the circuit. Through step down transformer AC-230V is converted to AC - 12V. 
+- 1N4007, PN junction rectifier diode, connected across the transformer converts 12V AC current to DC.
+- Then IC7805 restricts the voltage to 5V from 12V and gives additional safety to our circuitry.
+- These 5V serve as input to sensitive semiconductor Gas sensor MQ-6.
+- In clean air, it gives low voltage and when the gas concentration increases, output voltage also increases accordingly.
+- Comparator LM393 compares whether the output voltage of MQ 6 exceeds threshold value or not.
+- If it exceeds, buzzer will start beeping and a alert will be given to the user about the leakage of gas
 
 ## How to Use
 1. **Power the System**  
@@ -30,3 +40,6 @@ Circuit_Diagram.png
    
 3. **Safety Measures**  
    - Upon hearing the alarm, ventilate the area and turn off any potential gas sources.  
+
+## Reference link
+https://drive.google.com/file/d/1ZGqQU33oLNJbJru9kzSGWllwNGwAHyw0/view?usp=drive_link
