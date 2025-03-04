@@ -4,8 +4,7 @@
 This project is designed to detect LPG gas leakage using the MQ6 sensor. When the gas concentration exceeds a certain threshold, the system triggers an alert using a buzzer. The LM393 comparator processes the sensor signal, and a 7805 voltage regulator ensures a stable power supply. The system is ideal for safety applications in households and industries.
 
 ## Circuit Diagram
-Circuit_Diagram.png
-![alt text](Circuit_Diagram-1.png)
+![alt text](Circuit_Diagram.png)
 
 ## Key Components Used
 - **MQ6 Gas Sensor** - Detects LPG gas concentration in the air.
