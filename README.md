@@ -1,5 +1,3 @@
-# LPG_Gas_Detection_System
-
 # LPG Gas Leakage Detection System
 
 ## Project Overview
